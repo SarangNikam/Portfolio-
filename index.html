@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarang Nikam | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+    }
+    window.onload = () => {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark');
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Sarang Milind Nikam</h1>
+    <p>Software Engineer | Front-End Developer</p>
+    <div class="socials">
+      <a href="mailto:sarangnikam09@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/sarang-nikam" target="_blank">LinkedIn</a>
+      <a href="https://github.com/SarangNikam/Student-Management-System-" target="_blank">GitHub</a>
+      <button onclick="toggleTheme()">Toggle Theme</button>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Self-motivated software engineer with strong analytical skills and a passion for technology. Experienced in Java, SQL, and front-end web development. Seeking challenging roles to apply and expand my technical expertise.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech in Computer Engineering</strong>, RIT Rajaramnagar – CGPA: 8.04 (2021–2025)</li>
+      <li><strong>HSC</strong>, Yashwantro Chavan Institute – 93.83% (2020–2021)</li>
+      <li><strong>SSC</strong>, New English School – 89.20% (2018–2019)</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Technical</h3>
+    <p>Core Java, SQL, HTML, CSS, JavaScript</p>
+    <h3>Soft Skills</h3>
+    <p>Teamwork, Quick Learner, Time Management</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Student Management System</h3>
+      <p>Java application using JDBC to manage student records with MySQL integration. Streamlined school admin tasks.</p>
+    </div>
+    <div class="project">
+      <h3>Text Synthesizer</h3>
+      <p>Web app converting typed text into user-style handwriting and exporting it as images.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div>
+      <h3>Front-End Developer Intern – Amplifier Electronics (Jan–Jun 2025)</h3>
+      <p>Created responsive UI with HTML/CSS/JS, collaborated with team for secure UI modules, optimized UX.</p>
+    </div>
+    <div>
+      <h3>Technosphere 2K23 – Organizer</h3>
+      <p>Planned and coordinated events, managed Codeit! registrations and technical troubleshooting.</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Programming in Java – Infosys Springboard</li>
+      <li>DBMS and SQL – Infosys Springboard</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Sarang Milind Nikam | Satara, India</p>
+  </footer>
+</body>
+</html>

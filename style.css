@@ -1,0 +1,99 @@
+/* === Base Styles === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: 'Caveat', cursive;
+}
+header p {
+  font-size: 1.2rem;
+}
+.socials a, .socials button {
+  margin: 0 10px;
+  color: white;
+  background: #00000040;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.socials a:hover, .socials button:hover {
+  background: #ffffff30;
+}
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  color: #2575fc;
+}
+.project {
+  background: #ffffff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid #6a11cb;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+/* === Dark Mode === */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+body.dark header {
+  background: linear-gradient(to right, #2b5876, #4e4376);
+}
+body.dark section {
+  background-color: #1e1e1e;
+}
+body.dark .project {
+  background: #2c2c2c;
+  border-left-color: #4e4376;
+}
+body.dark h2 {
+  color: #4e90ff;
+  border-bottom-color: #333;
+}
+body.dark footer {
+  background: #1e1e1e;
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .socials a, .socials button {
+    display: block;
+    margin: 10px auto;
+  }
+  section {
+    padding: 1rem;
+  }
+}
